@@ -5,6 +5,10 @@ VisualStudioVersion = 17.0.31410.414
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnasCoding.Api", "AnasCoding.Api\AnasCoding.Api.csproj", "{DBA3126E-68E8-4107-A502-3CB7AD3BF3B5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnasCoding.Domain", "AnasCoding.Domain\AnasCoding.Domain.csproj", "{21B0266A-CB89-4B6E-B314-D63B4D364D4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnasCoding.Infra", "AnasCoding.Infra\AnasCoding.Infra.csproj", "{E8796D80-E8EE-47FC-B61F-8CC5CC147096}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{DBA3126E-68E8-4107-A502-3CB7AD3BF3B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBA3126E-68E8-4107-A502-3CB7AD3BF3B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBA3126E-68E8-4107-A502-3CB7AD3BF3B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21B0266A-CB89-4B6E-B314-D63B4D364D4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21B0266A-CB89-4B6E-B314-D63B4D364D4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21B0266A-CB89-4B6E-B314-D63B4D364D4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21B0266A-CB89-4B6E-B314-D63B4D364D4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8796D80-E8EE-47FC-B61F-8CC5CC147096}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8796D80-E8EE-47FC-B61F-8CC5CC147096}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8796D80-E8EE-47FC-B61F-8CC5CC147096}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8796D80-E8EE-47FC-B61F-8CC5CC147096}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
