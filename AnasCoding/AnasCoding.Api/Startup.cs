@@ -10,6 +10,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AnasCoding.Infra.Interfaces;
+using AnasCoding.Infra.Services;
 
 namespace AnasCoding.Api
 {
@@ -26,6 +28,9 @@ namespace AnasCoding.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddScoped<IKeyVaultSecretService, KeyVaultSecretService>();
+            services.AddScoped<ISendMail, DefaultSendMailService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -4,5 +4,10 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AnasCoding.Domain\AnasCoding.Domain.csproj" />
+    <ProjectReference Include="..\AnasCoding.Infra\AnasCoding.Infra.csproj" />
+  </ItemGroup>
+
 
 </Project>
