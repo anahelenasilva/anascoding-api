@@ -4,6 +4,7 @@ using MailKit.Net.Smtp;
 using MailKit.Security;
 using MimeKit;
 using System;
+using System.Threading.Tasks;
 
 namespace AnasCoding.Infra.Services
 {
@@ -16,7 +17,7 @@ namespace AnasCoding.Infra.Services
             _secretService = secretService;
         }
 
-        public string SendMail(SendMailRequest request)
+        public async Task<string> SendMail(SendMailRequest request)
         {
             try
             {
@@ -38,15 +39,14 @@ namespace AnasCoding.Infra.Services
                 smtpClient.Send(mailMessage);
                 smtpClient.Disconnect(true);
 
-                return "true";
+                return Task.FromResult("true").Result;
             }
             catch (Exception e)
             {
                 //TODO log erro
 
                 var msg = $"{e.Message} {e.InnerException?.Message}";
-
-                return msg;
+                return Task.FromResult(msg).Result;
             }
         }
     }

@@ -1,5 +1,6 @@
 ﻿using System.Net;
 using System.Net.Http;
+using System.Threading.Tasks;
 using AnasCoding.Domain.Messaging;
 using AnasCoding.Infra.Interfaces;
 using AnasCoding.Infra.Services;
@@ -19,9 +20,9 @@ namespace AnasCoding.Api.Controllers
         }
 
         [HttpPost]
-        public IActionResult Send([FromBody] SendMailRequest sendMailRequest)
+        public async Task<IActionResult> Send([FromBody] SendMailRequest sendMailRequest)
         {
-            var result = _defaultSendMailService.SendMail(sendMailRequest);
+            var result = await _defaultSendMailService.SendMail(sendMailRequest);
             return Ok(result);
         }
     }

@@ -23,7 +23,7 @@ namespace AnasCoding.Api
             services.AddControllers();
 
             services.AddScoped<IKeyVaultSecretService, KeyVaultSecretService>();
-            services.AddScoped<ISendMail, DefaultSendMailService>();
+            services.AddScoped<ISendMail, SendGridService>();
 
             services.AddSwaggerGen();
         }

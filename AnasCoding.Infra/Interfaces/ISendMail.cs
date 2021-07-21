@@ -1,9 +1,10 @@
-﻿using AnasCoding.Domain.Messaging;
+﻿using System.Threading.Tasks;
+using AnasCoding.Domain.Messaging;
 
 namespace AnasCoding.Infra.Interfaces
 {
     public interface ISendMail
     {
-        string SendMail(SendMailRequest request);
+        Task<string> SendMail(SendMailRequest request);
     }
 }
