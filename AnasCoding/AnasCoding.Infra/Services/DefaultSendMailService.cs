@@ -16,7 +16,7 @@ namespace AnasCoding.Infra.Services
             _secretService = secretService;
         }
 
-        public bool SendMail(SendMailRequest request)
+        public string SendMail(SendMailRequest request)
         {
             try
             {
@@ -38,13 +38,15 @@ namespace AnasCoding.Infra.Services
                 smtpClient.Send(mailMessage);
                 smtpClient.Disconnect(true);
 
-                return true;
+                return "true";
             }
             catch (Exception e)
             {
                 //TODO log erro
 
-                return false;
+                var msg = $"{e.Message} {e.InnerException?.Message}";
+
+                return msg;
             }
         }
     }

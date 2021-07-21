@@ -4,6 +4,6 @@ namespace AnasCoding.Infra.Interfaces
 {
     public interface ISendMail
     {
-        bool SendMail(SendMailRequest request);
+        string SendMail(SendMailRequest request);
     }
 }

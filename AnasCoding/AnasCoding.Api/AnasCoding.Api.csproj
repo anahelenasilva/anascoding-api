@@ -9,5 +9,13 @@
     <ProjectReference Include="..\AnasCoding.Infra\AnasCoding.Infra.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Properties\PublishProfiles\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.4" />
+  </ItemGroup>
+
 
 </Project>
